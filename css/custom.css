@@ -40,5 +40,29 @@
 }
 
 .text-p {
-  padding: 0.3rem 1rem;
+  padding: 0.3rem .2rem;
+}
+
+/* css grid */
+.grid-parent-container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.child-item {
+  padding: .2rem;
+  overflow: hidden;
+  display: grid;
+  justify-items: center;
+}
+.child-item img {
+  object-fit: cover;
+  width: 12rem;
+  height: 12rem;
+}
+.child-item p {
+  width: 12rem;
+  text-align: center;
 }
