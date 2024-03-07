@@ -6,7 +6,6 @@ html, body {
 
 }
 
-
 .logo-letters {
   font-family: 'Protest Revolution', sans-serif;
   font-size: 2.5rem;
@@ -28,7 +27,7 @@ html, body {
 /* #f8f0e3  2f9086*/
 .main-nav {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   justify-items:center;
   align-items: center;
   background-color:  #ffffff;
@@ -41,7 +40,7 @@ html, body {
 @media (min-width: 600px) {
   .main-nav {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
   }
 }
@@ -142,31 +141,85 @@ header.my-bg-photo p:nth-child(2) {
   padding: 0.3rem .2rem;
 }
 
+.presentation {
+  box-sizing: border-box;
+  text-align: center;
+  background: url('../images/steel-blue-white-pendant.jpg') no-repeat left, url('../images/canvas-hexagon-blue.jpg') no-repeat right;
+  background-size: 50%, 50%;
+  line-height: 20rem;
+  object-fit: fill;
+}
+.presentation img {
+  height: auto;
+  width: 90vw;
+}
+
 /* css grid index page*/
 .main-alt { 
   box-sizing: border-box;
   position: relative;
-  right: 10px;
-  background: url('../images/abstract-03.jpg') no-repeat;
+ /*  right: 10px;
+  background: url('../images/magnets.jpg') no-repeat;
   background-size: 40vw;
-  background-position: right  center;
+  background-position: right  center; */
   text-align: left;
   padding-left: 2rem;
 }
 .main-alt p {
-  width: 50vw;
+  width: 90vw;
   padding: 0 1rem 1rem 0;
 }
 .main-alt h1 {
   width: 50%;
   padding: 0;
 }
+
+.info-contact {
+  padding: 1rem;
+}
+.info-contact h2 {
+  padding-left: 1.1rem;
+}
+.main-alt ul {
+  padding-left: 1.2rem;
+  text-align: center;
+}
+.main-alt ul li {
+  list-style: none;
+  display: inline-block
+}
+.main-alt ul li a {
+  padding: 0.6rem;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+}
+.main-alt ul li a:hover {
+  color: #fff;
+}
+
+
+.image-gallery {
+  max-width: 1100px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  justify-items:center;
+  align-items: center;
+}
+.image-gallery-item {
+  padding: .3rem;
+  width:160px;
+  height:160px;
+}
+
 @media (max-width: 600px) {
   .main-alt {
     display: flex;
     flex-direction: column;
     background: none;
-    text-align: center;
+    text-align: left;
     box-sizing: border-box;
   }
   .main-alt p {
